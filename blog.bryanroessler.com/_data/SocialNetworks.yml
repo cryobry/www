@@ -12,7 +12,7 @@ facebook:
   icon: "fa-facebook"
 
 github:
-  name: "Git"
+  name: "GitHub"
   baseURL: ""
   icon: "fa-github"
 

@@ -6,7 +6,7 @@ subtitle: It can do it!
 tags: [vps]
 ---
 
-The rapidly deflating prices of cloud storage (or other low-end) VPS services means that it is more economical than ever to roll your own off-site backup solution, free from the limitations of third-party backup providers that offer middling workflow integration, questionable security, and expensive bandwidth. As an added bonus, these cheap storage VPS instances can also integrate a variety of lightweight web services, such as dynamic DNS, git repos, filesharing, or **even a web site**!
+The rapidly deflating prices of cloud storage (and other low-end) VPS services makes it more economical than ever to roll your own off-site backup solution, free from the limitations of third-party backup providers that offer middling workflow integration, questionable security, and expensive bandwidth. As an added bonus, these cheap storage VPS instances can also integrate a variety of lightweight web services, such as dynamic DNS, git repos, filesharing, or **even a web site**!
 
 VPS deal aggregate sites, such as [lowendbox](lowendbox.com), regularly provide offers on storage VPS services that rival shared web hosting or dedicated cloud backup providers. However, while the costs of cloud storage space have dropped dramatically, the CPU and memory configurations offered with the most storage VPS configurations are usually quite limited. Oftentimes a VPS provider will limit virtualized storage VPS instances to only 1 CPU core and <1GB memory (512MB is also common), since the intended use case is to simply provide enough resources for effective backup and retrieval.
 
