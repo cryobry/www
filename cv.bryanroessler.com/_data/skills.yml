@@ -1,0 +1,33 @@
+- skill:
+  name: NAMD & VMD
+  level: 100%
+- skill:
+  name: Bash, Python, Tcl
+  level: 98%
+- skill:
+  name: SGE, Slurm, PBS/Torque
+  level: 98%
+- skill:
+  name: R, gnuplot, matplotlib
+  level: 98%
+- skill:
+  name: Linux SysAdmin (Red Hat & Debian)
+  level: 98%
+- skill:
+  name: LaTeX
+  level: 90%
+- skill:
+  name: GROMACS/CHARMM/AMBER
+  level: 90%
+- skill:
+  name: QM/MM (Gaussian & FFTK)
+  level: 90%
+- skill:
+  name: Git
+  level: 90%
+- skill:
+  name: Networking (OpenWRT, pfSense, iptables)
+  level: 85%
+- skill:
+  name: Website Design
+  level: 60%

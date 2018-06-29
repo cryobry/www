@@ -1,0 +1,37 @@
+# Publications
+
+- title: "Long-range coupling between the extracellular gates and the intracellular ATP binding domains of multidrug resistance protein pumps and cystic fibrosis transmembrane conductance regulator channels."
+  url: https://www.ncbi.nlm.nih.gov/pubmed/26606940
+  authors: <b>Roessler BC</b>, Wei S, Icyuz M, Chauvet S, Tao B, Hartman JL 4th, Kirk KL.
+  journal: FASEB J
+  date: March, 2016
+  pages: 30(3):1247-62
+  doi: 10.1096/fj.15-278382
+  abstract: "The ABCC transporter subfamily includes pumps, the long and short multidrug resistance proteins (MRPs), and an ATP-gated anion channel, the cystic fibrosis transmembrane conductance regulator (CFTR). We show that despite their thermodynamic differences, these ABCC transporter subtypes use broadly similar mechanisms to couple their extracellular gates to the ATP occupancies of their cytosolic nucleotide binding domains. A conserved extracellular phenylalanine at this gate was a prime location for producing gain of function (GOF) mutants of a long MRP in yeast (Ycf1p cadmium transporter), a short yeast MRP (Yor1p oligomycin exporter), and human CFTR channels. Extracellular gate mutations rescued ATP binding mutants of the yeast MRPs and CFTR by increasing ATP sensitivity. Control ATPase-defective MRP mutants could not be rescued by this mechanism. A CFTR double mutant with an extracellular gate mutation plus a cytosolic GOF mutation was highly active (single-channel open probability >0.3) in the absence of ATP and protein kinase A, each normally required for CFTR activity. We conclude that all 3 ABCC transporter subtypes use similar mechanisms to couple their extracellular gates to ATP occupancy, and highly active CFTR channels that bypass defects in ATP binding or phosphorylation can be produced."
+
+- title: "An electrostatic interaction at the tetrahelix bundle promotes phosphorylation-dependent cystic fibrosis transmembrane conductance regulator (CFTR) channel opening."
+  url: https://www.ncbi.nlm.nih.gov/pubmed/25190805
+  authors: Wang W, <b>Roessler BC</b>, Kirk KL.
+  journal: J Biol Chem
+  date: October, 2014
+  pages: 289(44):30364-78
+  doi: 10.1074/jbc.M114.595710
+  abstract: "The CFTR channel is an essential mediator of electrolyte transport across epithelial tissues. CFTR opening is promoted by ATP binding and dimerization of its two nucleotide binding domains (NBDs). Phosphorylation of its R domain (e.g. by PKA) is also required for channel activity. The CFTR structure is unsolved but homology models of the CFTR closed and open states have been produced based on the crystal structures of evolutionarily related ABC transporters. These models predict the formation of a tetrahelix bundle of intracellular loops (ICLs) during channel opening. Here we provide evidence that residues E267 in ICL2 and K1060 in ICL4 electrostatically interact at the interface of this predicted bundle to promote CFTR opening. Mutations or a thiol modifier that introduced like charges at these two positions substantially inhibited ATP-dependent channel opening. ATP-dependent activity was rescued by introducing a second site gain of function (GOF) mutation that was previously shown to promote ATP-dependent and ATP-independent opening (K978C). Conversely, the ATP-independent activity of the K978C GOF mutant was inhibited by charge- reversal mutations at positions 267 or 1060 either in the presence or absence of NBD2. The latter result indicates that this electrostatic interaction also promotes unliganded channel opening in the absence of ATP binding and NBD dimerization. Charge-reversal mutations at either position markedly reduced the PKA sensitivity of channel activation implying strong allosteric coupling between bundle formation and R domain phosphorylation. These findings support important roles of the tetrahelix bundle and the E267-K1060 electrostatic interaction in phosphorylation-dependent CFTR gating."
+
+- title: "Conserved allosteric hot spots in the transmembrane domains of cystic fibrosis transmembrane conductance regulator (CFTR) channels and multidrug resistance protein (MRP) pumps."
+  url: "https://www.ncbi.nlm.nih.gov/pubmed/24876383"
+  authors: Wei S, <b>Roessler BC</b>, Chauvet S, Guo J, Hartman JL 4th, Kirk KL.
+  journal: J Biol Chem
+  date: July, 2014
+  pages: 289(29):19942-57
+  doi: 10.1074/jbc.M114.562116
+  abstract: "ATP-binding cassette (ABC) transporters are an ancient family of transmembrane proteins that utilize ATPase activity to move substrates across cell membranes. The ABCC subfamily of the ABC transporters includes active drug exporters (the multidrug resistance proteins (MRPs)) and a unique ATP-gated ion channel (cystic fibrosis transmembrane conductance regulator (CFTR)). The CFTR channel shares gating principles with conventional ligand-gated ion channels, but the allosteric network that couples ATP binding at its nucleotide binding domains (NBDs) with conformational changes in its transmembrane helices (TMs) is poorly defined. It is also unclear whether the mechanisms that govern CFTR gating are conserved with the thermodynamically distinct MRPs. Here we report a new class of gain of function (GOF) mutation of a conserved proline at the base of the pore-lining TM6. Multiple substitutions of this proline promoted ATP-free CFTR activity and activation by the weak agonist, 5'-adenylyl-β,γ-imidodiphosphate (AMP-PNP). TM6 proline mutations exhibited additive GOF effects when combined with a previously reported GOF mutation located in an outer collar of TMs that surrounds the pore-lining TMs. Each TM substitution allosterically rescued the ATP sensitivity of CFTR gating when introduced into an NBD mutant with defective ATP binding. Both classes of GOF mutations also rescued defective drug export by a yeast MRP (Yor1p) with ATP binding defects in its NBDs. We conclude that the conserved TM6 proline helps set the energy barrier to both CFTR channel opening and MRP-mediated drug efflux and that CFTR channels and MRP pumps utilize similar allosteric mechanisms for coupling conformational changes in their translocation pathways to ATP binding at their NBDs."
+
+- title: "Muscle-specific overexpression of NCOATGK, splice variant of O-GlcNAcase, induces skeletal muscle atrophy."
+  url: "https://www.ncbi.nlm.nih.gov/pubmed/21178104"
+  authors: Huang P, Ho SR, Wang K, <b>Roessler BC</b>, Zhang F, Hu Y, Bowe DB, Kudlow JE, Paterson AJ.
+  journal: Am J Physiol Cell Physiol.
+  date: March, 2011
+  pages: 300(3):C456-65
+  doi: 10.1152/ajpcell.00124.2010
+  abstract: "The protein O-linked β-N-acetylglucosamine (O-GlcNAc) modification plays an important role in skeletal muscle development and physiological function. In this study, bitransgenic mice were generated that overexpressed NCOAT(GK), an O-GlcNAcase-inactive spliced variant of the O-GlcNAcase gene, specifically in skeletal muscle using the muscle creatine kinase promoter. Expression of the chimeric enhanced green fluorescent protein-NCOAT(GK) transgene caused an increase of cellular O-GlcNAc levels, along with the accumulation and activation of proapoptotic factors in muscles of bitransgenic mice. The consequence of overexpressing the transgene for a 2-wk period was muscle atrophy and, in some cases, resulted in the death of male mice. Muscle atrophy is a common complication of many diseases, some of which correlate markedly with high cellular O-GlcNAc levels, such as diabetes. Our study provides direct evidence linking muscle atrophy and the disruption of O-GlcNAcase activity."
