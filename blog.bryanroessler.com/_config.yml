@@ -24,6 +24,7 @@ description: Ordo ab chao
 # List of links in the navigation bar
 navbar-links:
   Home: "https://bryanroessler.com"
+  Blog: "https://blog.bryanroessler.com"
   CV: "https://cv.bryanroessler.com"
   Repos: "https://git.bryanroessler.com"
   Services:
