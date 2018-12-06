@@ -174,11 +174,16 @@ link-tags: true
 
 # Exclude these files from production site
 exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - CHANGELOG.md
   - CNAME
   - Dockerfile
-  - Gemfile
-  - Gemfile.lock
   - LICENSE
   - README.md
   - Vagrantfile
