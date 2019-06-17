@@ -21,7 +21,7 @@ navbar-links:
   Home: "https://bryanroessler.com"
   Blog: "https://blog.bryanroessler.com"
   CV: "https://cv.bryanroessler.com"
-  Repos: "https://git.bryanroessler.com"
+  Git: "https://git.bryanroessler.com"
   Services:
     - Syncthing: "https://syncthing.bryanroessler.com"
     - Panel: "https://panel.bryanroessler.com"
