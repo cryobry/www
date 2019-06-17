@@ -3,7 +3,7 @@ layout: "post"
 title: "JRiver Media Center: the client-client model"
 subtitle:
 #bigimg: /img/path.jpg
-tags: [jriver, syncthing, x2go]
+tags: [jriver, syncthing]
 ---
 
 ### Introduction
