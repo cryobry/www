@@ -127,7 +127,7 @@ When you run the command certbot will prompt you to add one more DNS CNAME recor
 
 Example: `_acme-challenge.<yoursite>.com CNAME ch30791e-33f4-1af1-7db3-1ae95ecdde28.acme.<yoursite>.com.`
 
-Create a new CNAME record named `\_acme-challenge` and give it a value of `ch30791e-33f4-1af1-7db3-1ae95ecdde28.acme.<yoursite>.com.`
+Create a new CNAME record named `_acme-challenge` and give it a value of `ch30791e-33f4-1af1-7db3-1ae95ecdde28.acme.<yoursite>.com.`
 
 Wait a few minutes and hit <Enter\> to complete the ACME challenge and receive your certificates!
 
