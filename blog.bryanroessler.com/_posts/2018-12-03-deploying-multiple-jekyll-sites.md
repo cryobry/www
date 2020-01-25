@@ -29,14 +29,14 @@ For larger websites, I prefer using nested git repositories to simplify website 
 By combining the subgit strategy with some structured naming conventions it is possible to push, build, and deploy multiple subdomains or sites using a single git push from the client!
 
 Example:
-~~~
+~~~bash
 #!/usr/bin/env bash
 "/var/lib/git/gogs/gogs" hook --config='/var/lib/git/gogs/conf/app.ini' post-receive
 
 GIT_DIR="$(pwd)"
 TMP_GIT_DIR="/tmp/${GIT_DIR##*/}"
 
-if [ ! -d "${TMP_GIT_DIR}" ]; then
+if [[ ! -d "${TMP_GIT_DIR}" ]]; then
     git clone "${GIT_DIR}" "${TMP_GIT_DIR}"
     cd "${TMP_GIT_DIR}"
 else
@@ -48,10 +48,10 @@ else
 fi
 
 for site in *.*/; do
-  [ ! -d /var/www/${site} ] && mkdir -p /var/www/${site} && chgrp -R /var/www/${site} && chmod g+s /var/www/${site}
-  pushd ${site}
+  [[ ! -d "/var/www/${site}" ]] && mkdir -p "/var/www/${site}" && chgrp -R "/var/www/${site}" && chmod g+s "/var/www/${site}"
+  pushd "${site}"
   bundle install --deployment
-  bundle exec jekyll build --destination /var/www/${site}
+  bundle exec jekyll build --destination "/var/www/${site}"
   popd
 done
 
