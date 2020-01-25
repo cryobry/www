@@ -4,6 +4,7 @@ _site
 .vagrant
 .bundle
 vendor/bundle
+_drafts
 
 # general
 .DS_Store
