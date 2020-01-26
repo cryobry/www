@@ -10,14 +10,13 @@
 #    jekyll:latest \
 #    bundle update
 
-podman build -t atomjekylltemp "$1"
+podman build -t atomjekylltemp .
 podman run \
     --rm \
     -it \
     -p 4000:4000 \
-    -v "${1}:/srv/jekyll" \
-    -v "${1}/vendor/bundle:/usr/local/bundle" \
-    localhost/atomjekylltemp \
-    /bin/bash
+    -v "$PWD:/srv/jekyll" \
+    -v "$PWD/vendor/bundle:/usr/local/bundle" \
+    localhost/atomjekylltemp
 
 #podman rmi localhost/atomjekylltemp

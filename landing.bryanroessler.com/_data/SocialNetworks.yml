@@ -13,7 +13,7 @@ facebook:
 
 github:
   name: "GitHub"
-  baseURL: ""
+  baseURL: "https://github.com/"
   icon: "fa-github"
 
 twitter:
@@ -25,11 +25,6 @@ reddit:
   name: "Reddit"
   baseURL: "https://reddit.com/u/"
   icon: "fa-reddit"
-
-google-plus:
-  name: "Google+"
-  baseURL: "https://plus.google.com/"
-  icon: "fa-google-plus"
 
 email:
   name: "Email me"
@@ -78,7 +73,7 @@ telephone:
 
 rss:
   name: "RSS"
-  baseURL: "{{ '/feed.xml' | prepend: site.baseurl }}"
+  baseURL: "{{ '/feed.xml' | relative_url }}"
   icon: "fa-rss"
 
 steam:
