@@ -72,6 +72,7 @@ exit $?
 
 ### Configuration
 
+
 #### run-with-podman.sh
 
 I created the following script to handle container execution depending on a few arguments. You can download it and place it in your path here:
@@ -82,7 +83,7 @@ Download [run-with-podman.sh](https://git.bryanroessler.com/bryan/run-with-podma
 wget -q -O "${HOME}/.local/bin/run-with-podman" "https://git.bryanroessler.com/bryan/run-with-podman/src/master/run-with-podman.sh"
 ```
 
-Copypasta:
+If you prefer to copy-paste:
 ```bash
 #!/usr/bin/env bash
 
@@ -188,8 +189,7 @@ function parse_input () {
 parse_input "${@}"
 
 # Sanitize filename for unique container name
-CLEAN="${FILE_ACTIVE//_/}" && CLEAN="${CLEAN// /_}" &&
-CLEAN="${CLEAN//[^a-zA-Z0-9_]/}" && CLEAN="${CLEAN,,}"
+CLEAN="${FILE_ACTIVE//_/}" && CLEAN="${CLEAN//[^a-zA-Z0-9]/}" && CLEAN="${CLEAN,,}"
 
 # Allow container access to the pwd
 chcon -t container_file_t -R "${FILE_ACTIVE_PATH}"
