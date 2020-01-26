@@ -1,0 +1,13 @@
+cmd: '{FILE_ACTIVE}'
+name: 'Run build.sh'
+targets:
+  Persistent F31 container:
+    cmd: 'run-with-podman.sh --file {FILE_ACTIVE} --file-path {FILE_ACTIVE_PATH} --mode 1 --mask-dir RPMS --image fedora:latest --force-systemd -- -d -b'
+  Reset and run persistent F31 container:
+    cmd: 'run-with-podman.sh --file {FILE_ACTIVE} --file-path {FILE_ACTIVE_PATH} --mode 2 --mask-dir RPMS --image fedora:latest --force-systemd -- -d -b'
+  Nonpersistent F31 container w/ output:
+    cmd: 'run-with-podman.sh --file {FILE_ACTIVE} --file-path {FILE_ACTIVE_PATH} --mode 0 --image jekyll:latest'
+  Persistent F31 container w/ output:
+    cmd: 'run-with-podman.sh --file {FILE_ACTIVE} --file-path {FILE_ACTIVE_PATH} --mode 1 --image fedora:latest --force-systemd -- -d -b'
+  Reset and run persistent F31 container w/ output:
+    cmd: 'run-with-podman.sh --file {FILE_ACTIVE} --file-path {FILE_ACTIVE_PATH} --mode 2 --image fedora:latest --force-systemd -- -d -b'
