@@ -23,8 +23,8 @@ for site in *.*/; do
         chmod g+s "$deploy_dir"
     fi
     pushd "${site}" || exit $?
-    bundle install --deployment
-    bundle exec jekyll build --destination "$deploy_dir"
+    ruby -S bundle install --deployment
+    ruby -S bundle exec jekyll build --destination "$deploy_dir"
     popd || exit $?
 done
 
