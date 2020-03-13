@@ -105,7 +105,7 @@ url-pretty: "bryanroessler.com"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-158358388-1"
 
 # Google Tag Manager ID
 #gtm: ""
@@ -200,6 +200,9 @@ exclude:
   - README.md
   - Vagrantfile
 
+#https://github.com/jekyll/jekyll/issues/5267#issuecomment-241379902
+exclude: [vendor]
+
 # prose.io config
 prose:
   rooturl: '_posts'
@@ -255,8 +258,6 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-
-exclude: [vendor]
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
