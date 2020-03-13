@@ -1,2 +1,0 @@
-cmd: '{FILE_ACTIVE} {FILE_ACTIVE_PATH}'
-name: 'Run build.sh'
