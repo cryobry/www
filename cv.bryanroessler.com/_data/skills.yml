@@ -2,8 +2,8 @@
   name: NAMD & VMD
   level: 100%
 - skill:
-  name: Bash, Python, Tcl
-  level: 98%
+  name: python, php, sql, bash, tcl, R, css, html5, ruby
+  level: 100%
 - skill:
   name: SGE, Slurm, PBS/Torque
   level: 98%

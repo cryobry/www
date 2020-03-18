@@ -1,19 +1,26 @@
 # Jobs
-- company: University of Alabama at Birmingham
-  position: Research Assistant
+- company: BRSoftware
+  position: Insubordinate
   duration: Jan 2018 &mdash; Present
   summary: >
-    I'm currently completing work on two projects: <ul class="resume-item-list">
-    <li>Modifed substrate effects on the binding mechanisms of Sortase A, a
-    revised model. <i>In review.</i></li>
-    <li>The role of constitutive gain-of-function mutations on the structure and dynamics of the cystic fibrosis transmembrane conductance regulator.</li>
+    I have completed the following projects and goals: <ul class="resume-item-list">
+      <li>Created and deployed a version-controlled web journaling platform</li>
+      <li>Created and released a container-based development environment for building and deploying software (build-wrapper)</li>
+      <li>Learned php, sql, ruby, css, and html5 programming languages in addition to existing python, bash, tcl, and R knowledge</li>
+      <li>Contributed to open-source projects including ulauncher, fedora, podman, acme-dns, and openwrt</li>
+      <li>DIY renovated a home in the beautiful state of Florida</li>
+
+    I am currently working on three projects: <ul class="resume-item-list">
+      <li>namd-python, a python wrapper for the NAMD molecular dynamics suite</li>
+      <li>oci-md, a k8s solution for cloud-based scientific software and job control</li>
+      <li>reso-wp, a RESO real estate API plugin for Wordpress</li>
+      <li>flre-wp, a web-based real estate IDX solution</li>
 
 - company: University of Alabama at Birmingham
   position: Graduate Research Assistant
-  duration:  Aug 2010 &mdash; Dec 2017
+  duration:  Aug 2010 &mdash; Jan 2018
   summary: >
-    My doctoral thesis focused on the use of computational molecular dynamics to understand the impact of mutations and empirical structural determination methods on the
-    function and dynamics of multidrug resistance (specifically, CFTR) and sortase proteins.
+    My doctoral thesis focused on the use of computational molecular dynamics to understand the impact of mutations and empirical structural determination methods on the function and dynamics of multidrug resistance (specifically, CFTR) and sortase proteins.
 
 - company: U.S. Census Bureau
   position: Crew Leader
