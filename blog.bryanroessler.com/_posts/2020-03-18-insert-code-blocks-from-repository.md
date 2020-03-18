@@ -6,10 +6,9 @@ subtitle: Keep your tutorials in sync with upstream code
 tags: [jekyll, ruby, liquid, tags, git]
 ---
 
-
 ### Overview
 
-In addition to journaling, blogs are a great way to share code solutions with users searching for solutions to similar problems. However, most code is ever-evolving as any programmer will tell you, "code is only finished when it is abandoned." Writing static journal entries containing copy-and-pasted code blocks means that your blog's code blocks will eventually diverge from the most up-to-date commits in your version controlled repository as you continue to improve your software.
+Blogs are a great way to share code with users searching for solutions to similar problems. However, most code is ever-evolving, and as any programmer will tell you, "code is only finished when it is abandoned." Writing static journal entries containing copy-and-pasted code blocks will lead to divergence from your code repositories as you continue to improve your software.
 
 **Wouldn't it be great if your blog's code blocks could dynamically track the code residing in your version control repository?**
 
