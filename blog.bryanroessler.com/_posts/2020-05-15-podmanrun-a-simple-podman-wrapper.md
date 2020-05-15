@@ -11,11 +11,11 @@ tags:
 
 ### Rationale
 
-[In a previous post]({% post_url 2020-01-23-run-with-podman %}) I demonstrated the benefits of running and developing code in containers in order to maintain a clean and predictable development environment. After using [run-with-podman](https://git.bryanroessler.com/bryan/run-with-podman) for several months I found that there would often be edge cases requiring additional argument handling. In light of this, I have simplified run-with-podman into a [podman](https://podman.io/) cli wrapper that users can use to pass arguments directly to podman while maintaining the container management benefits of run-with-podman. It's a much simpler script that gives more power to users.
+[In a previous post]({% post_url 2020-01-23-run-with-podman %}) I demonstrated the benefits of running and developing code in containers in order to maintain a clean and predictable development environment. After using [run-with-podman](https://git.bryanroessler.com/bryan/run-with-podman) for several months I often ran into edge cases requiring additional argument handling. In light of this, I have simplified run-with-podman into `podmanRun`, a [podman](https://podman.io/) cli wrapper that can pass arguments directly to podman while maintaining the container management benefits of run-with-podman.
 
 ### Who is `podmanRun` intended for?
 
-Anyone that wants to easily run programs in ephemeral or persistent containers. Personally, I use podmanRun in order to quickly test code in different Linux distributions, automate compilation, and deploy containerized build services including preprocessors and web servers.
+Anyone that wants to easily run programs in ephemeral or persistent containers. Personally, I use `podmanRun` in order to quickly test code in different Linux distributions, automate compilation, and deploy containerized build services including preprocessors and web servers.
 
 ### What does `podmanRun` actually do?
 
@@ -50,6 +50,8 @@ podmanRun [-m MODE] [-o OPTIONS] [COMMANDS [ARGS]...] [--help] [--debug]
     Print this help message and exit
 ```
 
+`podmanRun` supports two modes: `recreate` and `persistent`. Recreate will always overwrite an existing container with the same name, while persistent will try to execute commands in an existing container (if found) using `podman exec`.
+
 Podman options can be passed to `--options` as a single string to be split on whitespace or passed multiple times discretely.
 
 ##### Examples
@@ -78,9 +80,6 @@ podmanRun -o "--name=bash_{FILE_ACTIVE_NAME_BASE}" \
           {FILE_ACTIVE} arg1 arg2
 ```
 
-### Modes
-
-podmanRun supports two modes: `recreate` and `persistent`. Recreate will always overwrite an existing container with the same name, while persistent will try to execute commands in an existing container (if found) using `podman exec`.
 
 
 
