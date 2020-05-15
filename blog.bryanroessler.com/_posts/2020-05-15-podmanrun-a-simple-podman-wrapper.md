@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 'podmanRun: a simple podman wrapper'
+title: 'podmanRun'
 date: '2020-05-15 15:36'
+subtitle: A simple podman run wrapper
 tags:
   - podman
   - bash
