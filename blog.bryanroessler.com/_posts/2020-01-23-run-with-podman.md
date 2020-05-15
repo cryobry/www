@@ -6,6 +6,10 @@ subtitle: Now with systemd!
 tags: [atom, podman, containers, ide, systemd, run-with-podman]
 ---
 
+# Note
+
+**The scripts provided in this tutorial have been superseded by the simpler [podmanRun]({% post_url 2020-05-15-podmanrun-a-simple-podman-wrapper %}) wrapper.**
+
 ### Overview
 
 In this tutorial we will be using Atom's [build package](https://atom.io/packages/build) (although you are free to use your own IDE) and a container management script to run files/commands on default system images using podman. We will go one step further by enabling systemd support in our build environment. We will also provide the option of masking the program's output from the host using unnamed volumes.
