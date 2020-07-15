@@ -10,6 +10,7 @@ baseurl: ""
 # Your name to show in the footer
 author: Bryan Roessler
 
+
 # --- List of links in the navigation bar --- #
 
 navbar-links:
@@ -28,7 +29,7 @@ navbar-links:
 #title-img: "./img/me_square_sepia_small.jpg"
 
 # --- Background colour/image options --- #
-avatar: "/img/me_square_sepia_small.jpg"
+avatar: "/assets/img/me_square_sepia_small.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -179,6 +180,8 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
+plugins: [jekyll-paginate]
+
 kramdown:
   input: GFM
 
@@ -190,9 +193,9 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: false  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-      readtime: false # add estimated reading time on all blog posts
+      readtime: true # add estimated reading time on all blog posts
   -
     scope:
       path: "" # all files
@@ -210,6 +213,7 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - vendor/
 
 
 # Beautiful Jekyll / Dean Attali
