@@ -97,11 +97,11 @@ After you are finished moving data around:
 2. Back in Windows, unshare the drive with the WSL2:
 
 ```(powershell)
-wsl --unmount \\.\PHYSICALDRIVE5 --bare
-wsl --unmount \\.\PHYSICALDRIVE6 --bare
-wsl --unmount \\.\PHYSICALDRIVE7 --bare
-wsl --unmount \\.\PHYSICALDRIVE8 --bare
-wsl --unmount \\.\PHYSICALDRIVE9 --bare
+wsl --unmount \\.\PHYSICALDRIVE5
+wsl --unmount \\.\PHYSICALDRIVE6
+wsl --unmount \\.\PHYSICALDRIVE7
+wsl --unmount \\.\PHYSICALDRIVE8
+wsl --unmount \\.\PHYSICALDRIVE9
 ```
 
 And voilà, you are done!
