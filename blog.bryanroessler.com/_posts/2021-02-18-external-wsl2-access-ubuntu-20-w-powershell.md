@@ -15,7 +15,7 @@ Most existing solutions rely on legacy `ifconfig`, which has been deprecated in 
 
 Steps:
 
-1. Download or copy-paste the following Powershell script to a local file:
+1. [Download](https://git.bryanroessler.com/bryan/scripts/raw/master/powershell/wsl2-firewall-rules.ps1) or copy-paste the following Powershell script to a local file:
 
 {% highlight powershell %}
 {% insert_git_code https://git.bryanroessler.com/bryan/scripts/raw/master/powershell/wsl2-firewall-rules.ps1 %}
