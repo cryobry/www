@@ -36,15 +36,14 @@ Steps:
 
 You can use your `.bashrc` in the WSL2 or simply append the following line to the beginning of your powershell task:
 
-`bash.exe -c "sudo /usr/sbin/service ssh start && sudo /usr/sbin/service unattended-upgrades start"`
+`bash.exe -c "sudo /usr/sbin/service ssh start; sudo /usr/sbin/service unattended-upgrades start"`
 
-You can add or remove services as necessary. In order to be able to use root privileges without entering a password, you will need to edit the sudoers file using `visudo` and adding the following line:
+You can add or remove services as necessary. In order to be able to use root privileges without entering a password, you will need to edit the sudoers file using **`visudo`** and adding the following lines:
 
-`%sudo ALL=NOPASSWD: /usr/sbin/service`
-
-You can optionally substitute your username for ALL for more granularity.
-
-## 
+```(bash)
+bryan ALL = NOPASSWD: /usr/sbin/service start ssh
+bryan ALL = NOPASSWD: /usr/sbin/service start unattended-upgrades
+```
 
 ## Troubleshooting
 
