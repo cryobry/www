@@ -164,9 +164,9 @@ The step I'm sure you've been waiting for.
 A wild goose chase:
 
 1. LetsEncrypt first asks your <yoursite\>.com domain for the TXT record at _acme-challenge.example.com to complete the challenge
-2. The Namecheap DNS server responds with a CNAME record that points to ch30791e-33f4-1af1-7db3-1ae95ecdde28.acme.<yoursite>.com, so LetsEncrypt goes there instead
-3. The authoritative DNS server for \*.acme.<yoursite\>.com is ns1.acme.<yoursite\>.com, which points at your server IP (running acme-dns)
-4. LetsEncrypt can finally ask ns1.acme.example.com what is the TXT record for ch30791e-33f4-1af1-7db3-1ae95ecdde28.acme.<yoursite\>.com and acme-dns will answer that question
+2. The Namecheap DNS server responds with a CNAME record that points to ch30791e-33f4-1af1-7db3-1ae95ecdde28.acme.*yoursite*.com, so LetsEncrypt goes there instead
+3. The authoritative DNS server for \*.acme.*yoursite*.com is ns1.acme.*yoursite*.com, which points at your server IP (running acme-dns)
+4. LetsEncrypt can finally ask ns1.acme.example.com what is the TXT record for ch30791e-33f4-1af1-7db3-1ae95ecdde28.acme.*yoursite*.com and acme-dns will answer that question
 
 ### Additional Considerations
 

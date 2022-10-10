@@ -27,6 +27,7 @@ In the course of achieving these goals, my JRMC network has been in a state of f
 JRMC contains a powerful [Media Server](https://wiki.jriver.com/index.php/Media_Server) that enables clients to play and manage media in JRMC as if they were using a local copy of the library. It is certainly possible to use JRMC Media Server exclusively to manage and play your media from the server to your clients in the traditional server-client model.
 
 JRMC Media Server pros:
+
 1. Tag changes are synced seamlessly between all devices
 2. Client devices are easy to add/remove
 
@@ -61,12 +62,12 @@ Although our media files are now in sync, and we have configured JRMC to use loc
 
 The benefits of the client-client model over the server-client model include:
 
-* Automatic redundancy of the media library
-* Each client has access to the media library even when offline
-* Each client can maintain its own set of views, playlists, and smartlists
-    * Useful if you want to give read-only access to a client and allow it to store and display its own set of ratings from a custom tag
-* Low bandwidth and low latency for playback
-* Cross-platform since file structure does not have to be identical
+- Automatic redundancy of the media library
+- Each client has access to the media library even when offline
+- Each client can maintain its own set of views, playlists, and smartlists
+  - Useful if you want to give read-only access to a client and allow it to store and display its own set of ratings from a custom tag
+- Low bandwidth and low latency for playback
+- Cross-platform since file structure does not have to be identical
 
 All that must be done to enable this functionality is to set up Auto-Import on each client to point at your shared (via Syncthing) media folder!
 
@@ -74,7 +75,7 @@ All that must be done to enable this functionality is to set up Auto-Import on e
 
 The real magic here is to store as much information as possible in the file tags so that they are synced via Syncthing between JRMC clients. This can include basic information like ratings, artwork, audio analysis data (R128 normalization) or more advanced information like user-defined fields that can be used to keep smartlists in sync (see [Advanced tagging](#advanced-tagging) below for more information).
 
-##### Sending metadata
+#### Sending metadata
 
 To propagate changes from a client to other clients, we will need to enable *Edit>Edit File Tags When File Info Changes* on any JRMC client that we want to have read-write access to the file metadata. If you leave this option unchecked on a client then that client will maintain its own set of metadata in the JRMC database without propagating changes. If you want to edit the actual file tags without affecting other clients (e.g. you are moving files on the client to a handheld device), then go ahead and enable the option but set your Syncthing client to Receive Only so that it maintains its own local database state. I also recommend enabling automatic file tagging during file analysis upon Auto-Import *Options>Library & Folders>Configure auto-import>Tasks>Write file tags when analyzing audio...* so that analysis only needs to be performed once on the client that performs the initial file import.
 
@@ -88,7 +89,7 @@ In order to receive metadata updates from other clients, you'll want to use JRMC
 
 Below I will describe two examples of expanding the functionality of the client-client model using file tags.
 
-##### Tracking newly added media
+#### Tracking newly added media
 
 Sometimes it is useful to keep track of which client has added a particular file to the Syncthing network. You can do this by creating a custom user-defined string field in JRMC (*Options>Library & Folders>Manage Library Fields*) named *Imported From* and check the box to *Save in file tags (when possible)*. Then configure each client to apply their specific client name to the field upon auto-import: In *Options>Library & Folders>Configure auto-import* select your auto-import directory that you are sharing with Syncthing, click *Edit...* and under *Apply these tags (optional)>Add>Custom* select the field you just created and enter the client name as the value. For instance I have named my clients *HTPC*, *Laptop*, *VPS*, and *Work*. In this manner you can track where your files were originally imported from.
 

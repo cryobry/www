@@ -13,6 +13,7 @@ I prefer storing my work in version controlled git repositories in order to keep
 There are three steps that need to occur for this to happen seamlessly after the git repos have been created (which is outside the scope of this post).
 
 On the client:
+
 1. Push website changes to the server
 
 On the server:
@@ -29,6 +30,7 @@ For larger websites, I prefer using nested git repositories to simplify website 
 By combining the subgit strategy with some structured naming conventions it is possible to push, build, and deploy multiple subdomains or sites using a single git push from the client!
 
 Example:
+
 ~~~bash
 #!/usr/bin/env bash
 "/var/lib/git/gogs/gogs" hook --config='/var/lib/git/gogs/conf/app.ini' post-receive

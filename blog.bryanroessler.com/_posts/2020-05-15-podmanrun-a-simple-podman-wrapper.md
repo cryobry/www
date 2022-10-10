@@ -22,22 +22,25 @@ Anyone that wants to easily run programs in ephemeral or persistent containers. 
 
 Not much, by design.
 
-1.  Generates a unique container name based on the `--name` argument passed to `podman` within the `podmanRun` `--options` string. If no `--name` is specified in the `--options` string, podmanRun will generate a unique container name based on the concatenated options and commands passed by the user. Thus, if any options or commands are changed, a new container will be recreated regardless if `--mode=persistent` was set.
-2.  Checks whether a container with that name already exists.
-3.  If no matching container was found: the `--options` are passed directly to `podman run` and the commands are executed in the new container.
-4.  If a matching container was found:
-  - `--mode=recreate` will remove the existing container and run the commands in a new container using `podman run` with the provided `--options`.
-  - `--mode=persistent` will run the commands in the existing container using `podman exec` and `--options` will be ignored.
-3.  By default, the container is not removed afterwards (it will only be removed upon subsequent invocations of `podmanRun` using `--mode=recreate`) to allow the user to inspect the container. Containers can be automatically removed after execution by uncommenting the requisite line in `__main()`.
+1. Generates a unique container name based on the `--name` argument passed to `podman` within the `podmanRun` `--options` string. If no `--name` is specified in the `--options` string, podmanRun will generate a unique container name based on the concatenated options and commands passed by the user. Thus, if any options or commands are changed, a new container will be recreated regardless if `--mode=persistent` was set.
+2. Checks whether a container with that name already exists.
+3. If no matching container was found: the `--options` are passed directly to `podman run` and the commands are executed in the new container.
+4. If a matching container was found:
+
+- `--mode=recreate` will remove the existing container and run the commands in a new container using `podman run` with the provided `--options`.
+- `--mode=persistent` will run the commands in the existing container using `podman exec` and `--options` will be ignored.
+
+5. By default, the container is not removed afterwards (it will only be removed upon subsequent invocations of `podmanRun` using `--mode=recreate`) to allow the user to inspect the container. Containers can be automatically removed after execution by uncommenting the requisite line in `__main()`.
 
 ### Usage
 
 For the complete list of up-to-date options, run `podmanRun --help`.
-```
+
+```bash
 podmanRun [-m MODE] [-o OPTIONS] [COMMANDS [ARGS]...] [--help] [--debug]
 ```
 
-##### Options
+#### Options
 
 ```text
 --mode, -m MODE
@@ -58,22 +61,26 @@ Podman options can be passed to `--options` as a single string to be split on wh
 ##### Examples
 
 Run an ephemeral PHP webserver container using the current directory as webroot:
-```
+
+```shell
 podmanRun -o "-p=8000:80 --name=php_script -v=$PWD:/var/www/html:z php:7.3-apache"
 ```
 
 Run an ephemeral PHP webserver container using the current directory as webroot using IDE:
-```
+
+```shell
 podmanRun -o "-p=8000:80 --name=php_{FILE_ACTIVE_NAME_BASE} -v={FILE_ACTIVE_PATH}:/var/www/html:z php:7.3-apache"
 ```
 
 Run an ephemeral bash script:
-```
+
+```sehll
 podmanRun -o "--name=bash_script -v=$PWD:$PWD:z -w=$PWD debian:testing" ./script.sh
 ```
 
 Run an ephemeral bash script using IDE:
-```
+
+```sehll
 podmanRun -o "--name=bash_{FILE_ACTIVE_NAME_BASE}" \
           -o "-v={FILE_ACTIVE_PATH}:{FILE_ACTIVE_PATH}:z" \
           -o "-w={FILE_ACTIVE_PATH}" \
@@ -81,8 +88,6 @@ podmanRun -o "--name=bash_{FILE_ACTIVE_NAME_BASE}" \
           {FILE_ACTIVE} arg1 arg2
 ```
 
-
-
-
 ## Additional Info
+
 Did you find `podmanRun` useful? [Buy me a coffee!](https://paypal.me/bryanroessler?locale.x=en_US)

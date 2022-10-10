@@ -39,12 +39,14 @@ We will be using getty to handle autologin for our user. In order to do this, we
 This will open your default system editor to create an override service file for the systemd getty@tty1.service.
 
 2. Enter the following into the drop-in override file you just opened/created and save it (replacing username with your actual username):
-```
+
+```(text)
 [Service]
 Type=simple
 ExecStart=
 ExecStart=-/sbin/agetty --autologin username --noclear %I $TERM
 ```
+
 3. Reload, restart, and enable the service file to load on boot: `sudo systemctl daemon-reload && sudo systemctl restart getty@tty1 && sudo systemctl enable getty@tty1`
 
 Your system will now autologin the user you specified when you reboot!
@@ -54,7 +56,8 @@ Your system will now autologin the user you specified when you reboot!
 In order to run a graphical program or window manager, you will first need to initiate an X server. We can start one automatically using a shell profile file that is sourced during user login. The location of this file (e.g. `/etc/profile.d/`, `~/.profile`, `~/.bash_profile`, `~/.zprofile` (zsh), etc.) depends on your Linux distribution and shell settings. Here I am assuming that you are using bash shell (you can confirm this via the `echo $SHELL` command), thus we will place the relevant commands in `~/.bash_profile`.
 
 1. Add the following to the end of your `~/.bash_profile`:
-```
+
+```(bash)
 # Start X11 automatically
 if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]]; then
         . startx
@@ -65,7 +68,8 @@ fi
 Now that the X server is set to run on login, it needs to be configured to start your window manager, in this case Openbox.
 
 2. Add the following line to `~/.xinitrc` and save the file:
-```
+
+```(bash)
 exec openbox-session
 ```
 
@@ -78,7 +82,8 @@ It's certainly possible to use Openbox to autostart your server's GUI programs b
 Here are the necessary steps to create and activate a systemd service file to start and stop JRiver Media Center.
 
 1. Create the file `/etc/systemd/system/jriver.service` and add the following (replacing username with your username):
-```
+
+```(text)
 [Unit]
 Description=JRiver Media Center 25
 After=graphical.target
