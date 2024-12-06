@@ -12,7 +12,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Bryan C. Roessler"
-resume_title:                   "Software developer and biologist"
+resume_title:                   "Software Developer"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "bryanroessler@gmail.com"
@@ -25,7 +25,9 @@ resume_header_contact_info:     "St. Petersburg, FL • bryanroessler@gmail.com"
 display_header_contact_info:    "true"
 
 resume_header_intro: >
-                    <p>I am a computational biologist by training and a programmer by trade. I try to identify important problems and write software to solve them. I am seeking a part or full-time telework opportunities in bioinformatics, molecular dynamics, cloud admin, linux sysadmin, or software development.</p>
+                    <p>I am a full-stack software developer with a background in high-performance computing and molecular dynamics.
+                    I excel at breaking complex problems into simple, solvable solutions. In my free time I enjoy contributing
+                    to a variety of open source projects within the Linux ecosystem.</p>
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,

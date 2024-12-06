@@ -100,6 +100,42 @@
           <h2>Publications</h2>
         </header>
 
+<<<<<<< HEAD
+        {% for education in site.data.education %}
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
+          <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
+          <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
+          <p class="resume-item-copy" itemprop="description">
+            <ul class="resume-item-list">
+              {% for award in education.awards %}
+              <li>{{ award.award }}</li>
+              {% endfor %}
+            </ul>
+
+
+          <p class="resume-item-copy">{{ education.summary }}</p>
+        </div>
+        {% endfor %}
+      </section>
+      <!-- end Education -->
+      {% endif %}
+
+
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        {% for project in site.data.projects %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
+          <p class="resume-item-copy">{{ project.description }}</p>
+=======
         {% for publication in site.data.publications %}
         <div class="resume-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
           <h3 class="resume-item-publication-title" itemprop="title">{% if publication.url %}<a href="{{ publication.url }}" itemprop="url">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}</h3>
@@ -111,6 +147,7 @@
                 <p> {{ publication.abstract }} </p>
             </details>
           </p>
+>>>>>>> 59c0648 (Initial commits)
         </div>
         {% endfor %}
 

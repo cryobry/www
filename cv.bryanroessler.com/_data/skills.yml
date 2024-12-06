@@ -2,10 +2,10 @@
   name: Molecular dynamics --- namd, vmd, gromacs, gaussian, charmm, amber
   level: 100%
 - skill:
-  name: Languages --- python, javascript, typescript php, sql, bash, tcl, R, css, html5, ruby, latex, git, gnuplot, matplotlib
+  name: Languages --- python, php, sql, bash, tcl, R, css, html5, ruby, latex, git, gnuplot, matplotlib
   level: 100%
 - skill:
-  name: Web frameworks --- jekyll, rails, hugo, django, react
+  name: Web frameworks --- jekyll, rails, hugo, django
   level: 100%
 - skill:
   name: Job control --- sge, slurm, pbs/torque
