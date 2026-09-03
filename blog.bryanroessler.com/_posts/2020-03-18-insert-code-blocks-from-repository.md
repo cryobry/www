@@ -28,10 +28,10 @@ If you are using jekyll to build the site you wish to contain dynamic code block
 
 In `_plugins`, create the following file:
 
-[insert_git_code.rb](https://git.bryanroessler.com/bryan/www/raw/master/blog.bryanroessler.com/_plugins/insert_git_code.rb)
+[insert_git_code.rb](https://git.bryanroessler.com/bryan/www/raw/branch/main/blog.bryanroessler.com/_plugins/insert_git_code.rb)
 
 {% highlight ruby %}
-{% insert_git_code https://git.bryanroessler.com/bryan/www/raw/master/blog.bryanroessler.com/_plugins/insert_git_code.rb %}
+{% insert_git_code https://git.bryanroessler.com/bryan/www/raw/branch/main/blog.bryanroessler.com/_plugins/insert_git_code.rb %}
 {% endhighlight %}
 
 This is a fairly simple Liquid tags plugin that just returns the text in a raw text file from a url.
@@ -42,7 +42,7 @@ In your markdown post or page, include something similar to the following (which
 
 {% highlight markdown %}
 {{ "{% highlight ruby " }}%}
-{{ "{% insert_git_code https://git.bryanroessler.com/bryan/www/raw/master/blog.bryanroessler.com/_plugins/insert_git_code.rb " }}%}
+{{ "{% insert_git_code https://git.bryanroessler.com/bryan/www/raw/branch/main/blog.bryanroessler.com/_plugins/insert_git_code.rb " }}%}
 {{ "{% endhighlight " }}%}
 {% endhighlight %}
 

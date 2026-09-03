@@ -45,7 +45,7 @@ else
     cd "${TMP_GIT_DIR}" || exit $?
     unset GIT_DIR
     git fetch --all
-    git reset --hard origin/master
+    git reset --hard origin/main
     git pull
 fi
 

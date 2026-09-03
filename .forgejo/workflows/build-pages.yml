@@ -1,0 +1,58 @@
+name: Build pages
+
+'on':
+  push:
+    branches: [master, dev]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: docker
+    container:
+      image: docker.io/library/ruby:3.3
+
+    steps:
+      - name: Checkout source
+        # This downloads the checkout Action implementation from data.forgejo.org;
+        # it checks out the triggering repository from this Forgejo instance.
+        uses: https://data.forgejo.org/actions/checkout@v4
+        with:
+          ref: ${{ forgejo.ref_name }}
+          path: source
+
+      - name: Build sites
+        env:
+          JEKYLL_ENV: production
+        run: |
+          set -eu
+          gem install bundler -v 2.5.22 --no-document
+          for site in landing.bryanroessler.com blog.bryanroessler.com cv.bryanroessler.com; do
+            (
+              cd "source/$site"
+              bundle _2.5.22_ config set --local path vendor/bundle
+              bundle _2.5.22_ install --jobs 4
+              bundle _2.5.22_ exec jekyll build --destination _site
+              test -f _site/index.html
+            )
+          done
+
+      - name: Checkout deployment branch
+        uses: https://data.forgejo.org/actions/checkout@v4
+        with:
+          ref: deploy/${{ forgejo.ref_name }}
+          path: deployment
+
+      - name: Publish deployment branch
+        run: |
+          set -eu
+          find deployment -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          for site in landing.bryanroessler.com blog.bryanroessler.com cv.bryanroessler.com; do
+            cp -a "source/$site/_site" "deployment/$site"
+          done
+          git -C deployment config user.name "Forgejo Actions"
+          git -C deployment config user.email "actions@forgejo.local"
+          git -C deployment add -A
+          if ! git -C deployment diff --cached --quiet; then
+            git -C deployment commit -m "Publish ${{ forgejo.ref_name }} sites"
+            git -C deployment push origin HEAD:deploy/${{ forgejo.ref_name }}
+          fi

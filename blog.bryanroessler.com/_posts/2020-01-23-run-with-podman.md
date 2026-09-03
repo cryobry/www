@@ -79,10 +79,10 @@ exit $?
 
 I created the following script to handle container execution depending on a few arguments. You can download it and place it in your path here:
 
-Download [run-with-podman.sh](https://git.bryanroessler.com/bryan/run-with-podman/src/master/run-with-podman.sh) and install to `$HOME/.local/bin`:
+Download [run-with-podman.sh](https://git.bryanroessler.com/bryan/run-with-podman/src/main/run-with-podman.sh) and install to `$HOME/.local/bin`:
 
 ```bash
-wget -q -O "${HOME}/.local/bin/run-with-podman" "https://git.bryanroessler.com/bryan/run-with-podman/src/master/run-with-podman.sh"
+wget -q -O "${HOME}/.local/bin/run-with-podman" "https://git.bryanroessler.com/bryan/run-with-podman/src/main/run-with-podman.sh"
 ```
 
 If you prefer to copy-paste:

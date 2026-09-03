@@ -7,7 +7,8 @@ module Jekyll
             super
             url = url.strip()
             @filename = File.basename(url)
-            encoded_url = URI.encode(url)
+            # URI.encode/decode were removed in Ruby 3.0; URI::DEFAULT_PARSER.escape is the direct replacement.
+            encoded_url = URI::DEFAULT_PARSER.escape(url)
             @file = URI.parse(encoded_url).read
         end
 
