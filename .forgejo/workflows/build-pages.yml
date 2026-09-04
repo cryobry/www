@@ -5,11 +5,14 @@ name: Build pages
     branches: [main, dev]
   workflow_dispatch:
 
+concurrency:
+  group: pages-${{ forgejo.ref_name }}
+  cancel-in-progress: false
+
 jobs:
   build:
-    runs-on: docker
-    container:
-      image: docker.io/library/ruby:3.3
+    runs-on: pages
+    timeout-minutes: 30
 
     steps:
       - name: Checkout source
@@ -19,12 +22,13 @@ jobs:
         with:
           ref: ${{ forgejo.ref_name }}
           path: source
+          persist-credentials: false
 
       - name: Build sites
         env:
           JEKYLL_ENV: production
         run: |
-          set -eu
+          set -euo pipefail
           gem install bundler -v 2.5.22 --no-document
           for site in landing.bryanroessler.com blog.bryanroessler.com cv.bryanroessler.com; do
             (
@@ -36,23 +40,22 @@ jobs:
             )
           done
 
-      - name: Checkout deployment branch
-        uses: https://data.forgejo.org/actions/checkout@v4
-        with:
-          ref: deploy/${{ forgejo.ref_name }}
-          path: deployment
-
-      - name: Publish deployment branch
+      - name: Publish sites
         run: |
-          set -eu
-          find deployment -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          set -euo pipefail
+          case "${{ forgejo.ref_name }}" in
+            main) target=/srv/www/main ;;
+            dev) target=/srv/www/dev ;;
+            *) printf '%s\n' "Unsupported deployment ref: ${{ forgejo.ref_name }}" >&2; exit 1 ;;
+          esac
+          mkdir -p "$target"
+          staging=$(mktemp -d "$target/.publish.XXXXXX")
+          trap 'rm -rf "$staging"' EXIT
           for site in landing.bryanroessler.com blog.bryanroessler.com cv.bryanroessler.com; do
-            cp -a "source/$site/_site" "deployment/$site"
+            cp -a "source/$site/_site" "$staging/$site"
+            test -f "$staging/$site/index.html"
           done
-          git -C deployment config user.name "Forgejo Actions"
-          git -C deployment config user.email "actions@forgejo.local"
-          git -C deployment add -A
-          if ! git -C deployment diff --cached --quiet; then
-            git -C deployment commit -m "Publish ${{ forgejo.ref_name }} sites"
-            git -C deployment push origin HEAD:deploy/${{ forgejo.ref_name }}
-          fi
+          for site in landing.bryanroessler.com blog.bryanroessler.com cv.bryanroessler.com; do
+            mkdir -p "$target/$site"
+            rsync --archive --delete "$staging/$site/" "$target/$site/"
+          done
