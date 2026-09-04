@@ -164,7 +164,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 
 - Beautiful-Jekyll v2.0.0 available as an official Ruby gem
 - Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
-- Consolidated the demo site, the ruby gem, and the master branch into one
+- Consolidated the demo site, the ruby gem, and the main branch into one
 - Added a `home` layout and used it in the index page
 - Added readtime support for the post header (#622) (thanks @MutMatt and @rubyreads)
 - Removed the dependency on `_data` folder since it doesn't get copied when using `remote_theme` (#614)

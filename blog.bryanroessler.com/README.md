@@ -184,9 +184,9 @@ If you want to use this theme to create a website for a particular repository, i
 
 1. [Delete the existing `gh-pages` branch](https://help.github.com/en/articles/creating-and-deleting-branches-within-your-repository#deleting-a-branch)
 
-2. [Create a new branch named `gh-pages` from the `master` branch](https://help.github.com/en/articles/creating-and-deleting-branches-within-your-repository#creating-a-branch)
+2. [Create a new branch named `gh-pages` from the `main` branch](https://help.github.com/en/articles/creating-and-deleting-branches-within-your-repository#creating-a-branch)
 
-Alternatively, instead of the above two steps, you can opt to use the `master` branch instead of `gh-pages` branch as your website's source by choosing that option in the main Settings page. 
+Alternatively, instead of the above two steps, you can opt to use the `main` branch instead of `gh-pages` branch as your website's source by choosing that option in the main Settings page. 
 
 ## Showcased users (success stories!)
 

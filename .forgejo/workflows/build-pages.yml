@@ -2,7 +2,7 @@ name: Build pages
 
 'on':
   push:
-    branches: [master, dev]
+    branches: [main, dev]
   workflow_dispatch:
 
 jobs:
