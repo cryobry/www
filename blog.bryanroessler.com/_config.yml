@@ -41,7 +41,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+# title-img: /path/to/image
 
 
 #####################################
@@ -95,6 +95,7 @@ share-links-active:
   facebook: false
   linkedin: false
   vk: false
+  reddit: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -124,7 +125,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+# keywords: "my,list,of,keywords"
 
 ######################################
 # --- Colours / background image --- #
@@ -147,19 +148,19 @@ footer-hover-col: "#0085A1"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+# navbar-img: "/assets/img/bgimage.png"
+# footer-img: "/assets/img/bgimage.png"
+# page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+# mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
+# site-css:
 #  - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
-#site-js:
+# site-js:
 #  - "/assets/js/custom-script.js"
 
 #################################
@@ -167,21 +168,21 @@ footer-hover-col: "#0085A1"
 #################################
 
 # Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
-#gtag: "G-XXXXXXXXXX"
+# gtag: "G-XXXXXXXXXX"
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
-#cloudflare_analytics: ""
+# cloudflare_analytics: ""
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-158358388-1"
 
 # Google Tag Manager ID
-#gtm: ""
+# gtm: ""
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
 # whether or not you want to allow users to opt out of tracking.
-#matomo:
+# matomo:
 #  site_id: "9"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
@@ -189,26 +190,26 @@ google_analytics: "UA-158358388-1"
 # Google Universal Analytics ID -- deprecated
 # As of July 2023 this is no longer supported by Google! If you are still using `google_analytics`,
 # you should switch to using the `gtag` field above instead.
-#google_analytics: "UA-XXXXXXXX-X"
+# google_analytics: "UA-XXXXXXXX-X"
 
 ####################
 # --- Comments --- #
 ####################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
+# disqus: ""
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-#fb_comment_id: ""
+# fb_comment_id: ""
 
 # To use CommentBox, sign up for a Project ID on https://commentbox.io
-#commentbox: "" # Project ID, e.g. "5694267682979840-proj"
+# commentbox: "" # Project ID, e.g. "5694267682979840-proj"
 
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,
 # (3) Install the Utterances app in your repository https://github.com/apps/utterances
 # See more details about the parameters below at https://utteranc.es/
-#utterances:
+# utterances:
 #  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  issue-term: title   # Mapping between blog posts and GitHub issues
 #  theme: github-light # Utterances theme
@@ -220,7 +221,7 @@ google_analytics: "UA-158358388-1"
 # https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further
 # instructions. For any support with staticman please direct questions to staticman and
 # not to BeautifulJekyll.
-#staticman:
+# staticman:
 #  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  branch     : main # If you're not using `main` branch, then you also need to update the `branch` parameter in `staticman.yml`
 #  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
@@ -233,7 +234,7 @@ google_analytics: "UA-158358388-1"
 # (2) Install the giscus app in your repository (details at https://giscus.app),
 # (3) Fill in *all* the parameters below
 # See more details about giscus and each of the following parameters at https://giscus.app
-#giscus:
+# giscus:
 #  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
 #  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  repository-id: # ID of your repository, retrieve this info from https://giscus.app
@@ -252,7 +253,7 @@ google_analytics: "UA-158358388-1"
 date_format: "%B %-d, %Y"
 
 # Facebook App ID
-#fb_app_id: ""
+# fb_app_id: ""
 
 #################################################################################
 # --- You don't need to touch anything below here (but you can if you want) --- #
@@ -264,8 +265,6 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
-
-plugins: [jekyll-paginate]
 
 kramdown:
   input: GFM
