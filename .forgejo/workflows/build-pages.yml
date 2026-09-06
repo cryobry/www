@@ -1,4 +1,4 @@
-name: Build pages
+name: Build Jekyll static sites on push
 
 'on':
   push:
