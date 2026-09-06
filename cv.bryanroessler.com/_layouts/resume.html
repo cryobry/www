@@ -207,14 +207,10 @@
           </header>
 
           {% for skill in site.data.skills %}
-          <h4 class="resume-item-details">{{ skill.name }}</h4>
-
-          <div class="skills">
-            <div class="level-bar">
-              <div class="level-bar-inner" style=width:{{ skill.level }}>
-              </div>
-            </div><!--//level-bar-->
-          </div><!--//skills-->
+          <div class="skill-group">
+            <h4 class="resume-item-details">{{ skill.category }}</h4>
+            <p class="resume-item-copy">{{ skill.items }}</p>
+          </div>
           {% endfor %}
 
         </section><!--//skills-section-->

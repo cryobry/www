@@ -1,24 +1,10 @@
-- skill:
-  name: Molecular dynamics --- namd, vmd, gromacs, gaussian, charmm, amber
-  level: 100%
-- skill:
-  name: Languages --- python, php, sql, bash, tcl, R, css, html5, ruby, latex, git, gnuplot, matplotlib
-  level: 100%
-- skill:
-  name: Web frameworks --- jekyll, rails, hugo, django
-  level: 100%
-- skill:
-  name: Job control --- sge, slurm, pbs/torque
-  level: 100%
-- skill:
-  name: Linux sysadmin --- rhel & debian, systemd, podman/docker/oci, udev
-  level: 100%
-- skill:
-  name: Cloud admin --- k8s & openshift
-  level: 98%
-- skill:
-  name: Networking --- openwrt, pfsense, iptables, gpg
-  level: 90%
-- skill:
-  name: Graphics design
-  level: 10%
+- category: Programming languages & data
+  items: Python, R, Bash/Shell, MATLAB, PHP, Ruby, SQL, Tcl, JavaScript, HTML/CSS, LaTeX
+- category: Frameworks & tooling
+  items: Django, Rails, Jekyll, Hugo, Git, GNUplot, matplotlib
+- category: Scientific computing
+  items: Molecular dynamics, NAMD, VMD, GROMACS, Gaussian, CHARMM, AMBER
+- category: Linux & infrastructure
+  items: Fedora/RHEL, Debian, systemd, Ansible, Podman, Docker/OCI, udev, OpenWrt, pfSense
+- category: HPC & orchestration
+  items: Slurm, SGE, PBS/Torque, Kubernetes, OpenShift

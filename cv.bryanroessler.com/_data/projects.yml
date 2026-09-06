@@ -1,0 +1,47 @@
+- project: Personal web platform
+  role: Jekyll, Ruby, HTML/CSS, Forgejo Actions
+  duration: Ongoing
+  url: https://git.bryanroessler.com/bryan/www
+  description: Maintain and deploy a multi-site personal web platform with reproducible Jekyll builds, branch-based environments, and automated publication.
+
+- project: openwrtbuilder
+  role: Bash, Linux, OpenWrt
+  duration: Ongoing
+  url: https://git.bryanroessler.com/bryan/openwrtbuilder
+  description: Build and customize OpenWrt images through a Bash-centric workflow designed for repeatable system configuration.
+
+# - project: NBA Playoffs Game
+#   role: Python, Google Sheets API
+#   duration: Ongoing
+#   url: https://git.bryanroessler.com/bryan/nba-playoffs-game
+#   description: Automate the collection and publication of NBA playoff statistics to Google Sheets with a Python-driven updater.
+
+- project: Molecular dynamics toolkit
+  role: Bash, NAMD, VMD, GROMACS
+  duration: UAB research
+  url: https://git.bryanroessler.com/bryan/molecular-dynamics
+  description: Develop automation and analysis scripts for molecular-dynamics simulations and computational structural biology research.
+
+- project: Ulauncher X2Go client
+  role: Python, Linux desktop automation
+  duration: Ongoing
+  url: https://git.bryanroessler.com/bryan/ulauncher-x2goclient
+  description: Build a Ulauncher extension that provides quick access to X2Go sessions from the Linux desktop.
+
+- project: Server Admin
+  role: Bash, Linux systems administration
+  duration: UAB research
+  url: https://git.bryanroessler.com/bryan/hartman-server
+  description: Maintain scripts and configuration for a Linux server supporting computational research in the John L. Hartman Lab.
+
+- project: installJRMC
+  role: Bash, Linux services
+  duration: Ongoing
+  url: https://git.bryanroessler.com/bryan/installJRMC
+  description: Automate installation and service configuration for JRiver Media Center across Linux distributions.
+
+- project: ACME Namecheap automation
+  role: Bash, Let's Encrypt, DNS automation
+  duration: Ongoing
+  url: https://git.bryanroessler.com/bryan/acme-namecheap
+  description: Automate Let's Encrypt certificate renewal through Namecheap DNS validation for managed hosts.

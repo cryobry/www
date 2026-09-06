@@ -3,10 +3,14 @@
   position: Lead Software Developer and Consultant
   duration: Jan 2018 &mdash; Present
   summary: >
-    I create full-stack software solutions for clients in a variety of programming languages.
+    Lead the design and delivery of full-stack software solutions for clients, working across Python, PHP, Ruby, SQL,
+    JavaScript, HTML, and CSS. Translate ambiguous requirements into maintainable applications, integrations, and automation,
+    while administering the Linux systems and development tooling that support them.
 
 - company: University of Alabama at Birmingham
   position: Graduate Research Assistant
-  duration:  Aug 2010 &mdash; Jan 2018
+  duration: Aug 2010 &mdash; Jan 2018
   summary: >
-    My doctoral thesis utilized computational molecular dynamics to study the effects of mutations on the structure and function of multidrug resistance proteins.
+    Designed and analyzed computational molecular-dynamics simulations to investigate how mutations alter the structure,
+    dynamics, and function of multidrug-resistance proteins. Built reproducible analysis workflows for high-performance
+    computing environments and published four peer-reviewed papers from this work.
