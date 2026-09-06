@@ -27,15 +27,18 @@ jobs:
       - name: Build sites
         env:
           JEKYLL_ENV: production
+          BUNDLE_PATH: /srv/www/.bundle
+          BUNDLE_WITHOUT: development
         run: |
           set -euo pipefail
-          gem install bundler -v 2.5.22 --no-document
+          if ! command -v bundle >/dev/null 2>&1; then
+            gem install bundler --no-document
+          fi
           for site in landing.bryanroessler.com blog.bryanroessler.com cv.bryanroessler.com; do
             (
               cd "source/$site"
-              bundle _2.5.22_ config set --local path vendor/bundle
-              bundle _2.5.22_ install --jobs 4
-              bundle _2.5.22_ exec jekyll build --destination _site
+              bundle check >/dev/null 2>&1 || bundle install --jobs 4 --retry 3
+              bundle exec jekyll build --destination _site
               test -f _site/index.html
             )
           done
