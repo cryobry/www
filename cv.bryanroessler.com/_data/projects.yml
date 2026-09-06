@@ -10,6 +10,18 @@
   url: https://git.bryanroessler.com/bryan/openwrtbuilder
   description: Build and customize OpenWrt images through a Bash-centric workflow designed for repeatable system configuration.
 
+# - project: deployer
+#   role: Ansible, Fedora/RHEL, Podman
+#   duration: Ongoing
+#   url: https://git.bryanroessler.com/bryan/deployer
+#   description: Automate multi-host Linux deployments, application configuration, rootless containers, and system services with Ansible.
+
+# - project: Soulseekarr
+#   role: Python, Linux, media automation
+#   duration: Ongoing
+#   url: https://git.bryanroessler.com/bryan/soulseekarr
+#   description: Automate music discovery and library management through a self-hosted media workflow.
+
 # - project: NBA Playoffs Game
 #   role: Python, Google Sheets API
 #   duration: Ongoing
@@ -28,7 +40,7 @@
   url: https://git.bryanroessler.com/bryan/ulauncher-x2goclient
   description: Build a Ulauncher extension that provides quick access to X2Go sessions from the Linux desktop.
 
-- project: Server Admin
+- project: Server Toolkit
   role: Bash, Linux systems administration
   duration: UAB research
   url: https://git.bryanroessler.com/bryan/hartman-server
