@@ -199,6 +199,14 @@
     }
   }
 
+  .skill-group {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .resume-item-copy { margin: .75rem 0 0; }
 }
 
