@@ -30,7 +30,7 @@ navbar-links:
   Home: "https://bryanroessler.com"
   Blog: "https://blog.bryanroessler.com"
   CV: "https://cv.bryanroessler.com"
-  Git: "https://git.bryanroessler.com"
+  Git: "https://git.bryanroessler.com/explore/repos"
   Services:
     - Syncthing: "https://syncthing.bryanroessler.com"
     - Panel: "https://panel.bryanroessler.com"
@@ -62,7 +62,7 @@ social-network-links:
   email: "bryanroessler@gmail.com"
 # rss: true  # remove this line if you don't want to show an RSS link at the bottom
 # facebook:
-  github: "https://git.bryanroessler.com"
+  github: "https://git.bryanroessler.com/explore/repos"
 #  twitter:
 #  patreon: DeanAttali
 #  youtube: c/daattali
