@@ -1,10 +1,12 @@
 # Degree
 - uni: University of Alabama-Birmingham
-  degree: 'PhD: Computational Biology'
+  degree: 'PhD: Cell, Molecular & Developmental Biology'
   year: 2010 &mdash; 2017
-  # awards:
-  #  - award: Summa Cumme Laude graduate
-  summary: '<u>Indirect interactions affect the dynamics of multidrug resistance proteins and Sortase A</u>'
+  summary: 'Computational doctoral thesis: <u>Indirect interactions affect the dynamics of multidrug resistance proteins and Sortase A</u>'
+  highlights:
+    - 'Engineered HPC molecular dynamics (MD) simulations to model allosteric gating in large membrane proteins.'
+    - 'Built automated Python, Tcl, and Bash pipelines to process multi-GB trajectory datasets and perform statistical mechanics analyses.'
+    - 'Utilized SLURM/PBS cluster environments to simulate free-energy landscapes and identify mutational hot spots.'
 
 - uni: Gonzaga University
   degree: 'BSc: Biology'

@@ -1,10 +1,14 @@
 - category: Programming languages & data
-  items: Python, R, Bash/Shell, MATLAB, PHP, Ruby, SQL, Tcl, JavaScript, HTML/CSS, LaTeX
+  items: Python, R, Bash/Shell, MATLAB, PHP, Ruby, SQL, Tcl, JavaScript, TypeScript, HTML/CSS, LaTeX
 - category: Frameworks & tooling
-  items: Django, Rails, Jekyll, Hugo, Git, GNUplot, matplotlib
+  items: Django, Rails, Jekyll, PySide6, Git, Forgejo
 - category: Scientific computing
-  items: Molecular dynamics, NAMD, VMD, GROMACS, Gaussian, CHARMM, AMBER
+  items: Molecular dynamics, NAMD, VMD, GROMACS, Gaussian, CHARMM, AMBER, GNUplot, matplotlib
 - category: Linux & infrastructure
-  items: Fedora/RHEL, Debian, systemd, Ansible, Podman, Docker/OCI, udev, OpenWrt, pfSense
+  items: Fedora/RHEL, Debian, systemd, Ansible, Podman, Docker/OCI, btrfs, code, packagekitd, udev
+- category: Open-source projects & contributions
+  items: OpenWRT, Picard, btrbk, see commit history
 - category: HPC & orchestration
   items: Slurm, SGE, PBS/Torque, Kubernetes, OpenShift
+- category: AI orchestration & ML
+  items: PyTorch, TensorFlow, Hermes Agent, OpenClaw

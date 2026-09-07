@@ -1,5 +1,5 @@
 # Site settings
-title: "Bryan Roessler's CV"
+title: "Bryan Roessler"
 # description: "A resume template for Jekyll and GitHub Pages sites."
 
 # Build settings
@@ -11,7 +11,7 @@ sass:
 
 # Resume settings
 resume_avatar: "true"
-resume_name: "Bryan C. Roessler"
+resume_name: "Dr. Bryan C. Roessler"
 resume_title: "Lead Software Developer & Consultant"
 
 # used for the contact button in _layouts/resume.html
@@ -25,13 +25,27 @@ resume_header_contact_info: "St. Petersburg, FL • bryanroessler@gmail.com"
 display_header_contact_info: "true"
 
 resume_header_intro: >
-  <p>I am a lead software developer, consultant, and computational biologist with 20+ years of experience and an enduring love of programming.
-  I care about software that is beautiful in the practical sense: clear, legible, dependable, and simple enough to remain useful long after
-  it changes hands. I began in academic computing, using Bash, R, MATLAB, and scientific software to analyze molecular-dynamics simulations
-  on Linux supercomputers and job-queue systems. Today I work across Python, PHP, Ruby, SQL, and JavaScript, building full-stack applications,
-  desktop tools, data workflows, and Linux infrastructure. Bash remains my favorite language because it connects programs into useful systems;
-  together with Ansible and containers, I use it to create deterministic, idempotent automation that is easy to run and just works. I bring
-  curiosity, careful code review, sound engineering principles, and a preference for established patterns and modern tools to every problem.</p>
+  <p>
+    I am a lead software developer, consultant, and computational biologist
+    with more than 20 years of experience spanning scientific computing,
+    application engineering, systems integration, and Linux infrastructure. I
+    began in academic high-performance computing, using Bash, R, MATLAB,
+    molecular dynamics software, Linux supercomputers, and batch schedulers to
+    build and execute computational research workflows. Today I design,
+    implement, and review full-stack applications, scientific and
+    data-processing pipelines, desktop tools, containerized services, and
+    deployment automation using Python, PHP, Ruby, SQL, JavaScript, Bash,
+    Ansible, Podman, systemd, and standard Linux tooling. Bash is my primary
+    language for connecting programs and automating systems, particularly where
+    deterministic behavior, portability, and operational transparency are
+    required. I specialize in reducing complex requirements and codebases into
+    self-contained, documented systems with readable implementations,
+    maintainable interfaces, reproducible workflows, and idempotent
+    deployments. My current work emphasizes open-source tooling and
+    declarative programming models that make software and infrastructure
+    explicit, testable, repeatable, and easier to evolve.
+  </p>
+
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
