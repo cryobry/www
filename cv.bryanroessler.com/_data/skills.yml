@@ -11,4 +11,4 @@
 - category: HPC & orchestration
   items: Slurm, SGE, PBS/Torque, Kubernetes, OpenShift
 - category: AI-assisted engineering & orchestration
-  items: Hermes Agent, OpenClaw, AI-guided codebase analysis, implementation review, workflow automation, PyTorch, TensorFlow
+  items: Hermes Agent, OpenClaw, Copilot Review
