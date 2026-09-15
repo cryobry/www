@@ -27,25 +27,20 @@ display_header_contact_info: "true"
 resume_header_intro: >
   <p>
     I am a lead software developer, consultant, and computational biologist
-    with more than 20 years of experience spanning scientific computing,
-    application engineering, systems integration, and Linux infrastructure.
-    More than 15 of those years predate generative AI, providing the codebase,
-    systems, and domain judgment I use to direct and verify AI-assisted
-    engineering. I use AI orchestration to accelerate research, implementation,
-    and codebase analysis while remaining accountable for architecture,
-    correctness, security, and operational fit. I began in academic
-    high-performance computing, using Bash, R, MATLAB, molecular dynamics
-    software, Linux supercomputers, and batch schedulers to build reproducible
-    research workflows. Today I design, implement, and review full-stack
-    applications, scientific and data-processing pipelines, desktop tools,
-    containerized services, and deployment automation using Python, PHP, Ruby,
-    SQL, JavaScript, Bash, Ansible, Podman, systemd, and standard Linux tooling.
-    I specialize in turning complex requirements and unfamiliar codebases into
-    self-contained, documented systems with readable implementations,
-    maintainable interfaces, reproducible workflows, and idempotent
-    deployments. My current work emphasizes open-source tooling and
-    declarative programming models that make software and infrastructure
-    explicit, testable, repeatable, and easier to evolve.
+    who turns complex technical problems into dependable, maintainable systems.
+    Over 20 years, I have worked across scientific computing, application
+    engineering, systems integration, and Linux infrastructure. With more than
+    15 years of experience predating generative AI, I bring seasoned engineering
+    judgment to AI-assisted work: using AI to accelerate research,
+    implementation, and codebase analysis without outsourcing decisions about
+    architecture, correctness, security, or operations. My work spans
+    full-stack applications, scientific and data-processing pipelines, desktop
+    tools, containerized services, and deployment automation. I began in
+    academic high-performance computing, building reproducible research
+    workflows on Linux supercomputers with Bash, R, MATLAB, molecular dynamics
+    software, and batch schedulers. Today I focus on open-source tooling and
+    declarative programming models that make software explicit, testable,
+    repeatable, and easier to evolve.
   </p>
 
 
