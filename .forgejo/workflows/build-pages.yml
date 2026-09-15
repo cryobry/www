@@ -20,7 +20,7 @@ jobs:
         # it checks out the triggering repository from this Forgejo instance.
         uses: https://data.forgejo.org/actions/checkout@v4
         with:
-          ref: ${{ forgejo.ref_name }}
+          ref: ${{ forgejo.sha }}
           path: source
           persist-credentials: false
 
@@ -31,6 +31,9 @@ jobs:
           BUNDLE_WITHOUT: development
         run: |
           set -euo pipefail
+          expected_sha='${{ forgejo.sha }}'
+          actual_sha=$(git -C source rev-parse HEAD)
+          test "$actual_sha" = "$expected_sha"
           if ! command -v bundle >/dev/null 2>&1; then
             gem install bundler --no-document
           fi
@@ -58,3 +61,5 @@ jobs:
             mkdir -p "$target/$site"
             rsync --archive --delete "$staging/$site/" "$target/$site/"
           done
+          printf '%s\n' "$expected_sha" > "$target/.deployment-commit"
+          test "$(cat "$target/.deployment-commit")" = "$expected_sha"
