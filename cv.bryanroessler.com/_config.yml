@@ -28,17 +28,19 @@ resume_header_intro: >
   <p>
     I am a lead software developer, consultant, and computational biologist
     with more than 20 years of experience spanning scientific computing,
-    application engineering, systems integration, and Linux infrastructure. I
-    began in academic high-performance computing, using Bash, R, MATLAB,
-    molecular dynamics software, Linux supercomputers, and batch schedulers to
-    build and execute computational research workflows. Today I design,
-    implement, and review full-stack applications, scientific and
-    data-processing pipelines, desktop tools, containerized services, and
-    deployment automation using Python, PHP, Ruby, SQL, JavaScript, Bash,
-    Ansible, Podman, systemd, and standard Linux tooling. Bash is my primary
-    language for connecting programs and automating systems, particularly where
-    deterministic behavior, portability, and operational transparency are
-    required. I specialize in reducing complex requirements and codebases into
+    application engineering, systems integration, and Linux infrastructure.
+    More than 15 of those years predate generative AI, providing the codebase,
+    systems, and domain judgment I use to direct and verify AI-assisted
+    engineering. I use AI orchestration to accelerate research, implementation,
+    and codebase analysis while remaining accountable for architecture,
+    correctness, security, and operational fit. I began in academic
+    high-performance computing, using Bash, R, MATLAB, molecular dynamics
+    software, Linux supercomputers, and batch schedulers to build reproducible
+    research workflows. Today I design, implement, and review full-stack
+    applications, scientific and data-processing pipelines, desktop tools,
+    containerized services, and deployment automation using Python, PHP, Ruby,
+    SQL, JavaScript, Bash, Ansible, Podman, systemd, and standard Linux tooling.
+    I specialize in turning complex requirements and unfamiliar codebases into
     self-contained, documented systems with readable implementations,
     maintainable interfaces, reproducible workflows, and idempotent
     deployments. My current work emphasizes open-source tooling and

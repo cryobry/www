@@ -10,5 +10,5 @@
   items: OpenWRT, Picard, btrbk, see commit history
 - category: HPC & orchestration
   items: Slurm, SGE, PBS/Torque, Kubernetes, OpenShift
-- category: AI orchestration & ML
-  items: PyTorch, TensorFlow, Hermes Agent, OpenClaw
+- category: AI-assisted engineering & orchestration
+  items: Hermes Agent, OpenClaw, AI-guided codebase analysis, implementation review, workflow automation, PyTorch, TensorFlow
