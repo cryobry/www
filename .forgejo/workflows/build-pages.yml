@@ -42,10 +42,6 @@ jobs:
               test -f _site/index.html
             )
           done
-
-      - name: Publish sites
-        run: |
-          set -euo pipefail
           case "${{ forgejo.ref_name }}" in
             main) target=/srv/www/main ;;
             dev) target=/srv/www/dev ;;
